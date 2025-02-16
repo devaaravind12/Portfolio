@@ -1,0 +1,110 @@
+/* CyberPortfolio.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #00ff00;
+  }
+  
+  .cyber-portfolio {
+    text-align: center;
+  }
+  
+  .timeline-wallpaper {
+    position: relative;
+    height: 100vh;
+    background: url('/public/timeline-wallpaper.jpg') no-repeat center center/cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #00ff00;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  nav {
+    background-color: #111;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ff00ff;
+  }
+  
+  section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .character {
+    width: 100px;
+    height: 100px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    margin: 1rem auto;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: #00ff00;
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ff00ff;
+  }
